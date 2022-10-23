@@ -1,13 +1,13 @@
 
-inputvalues = input('Enter all elements values: ')
-numbers1 = inputvalues.split() 
+inputvalues = input("Enter all element values: ")
+numbers1 = inputvalues.split()
 for i in range(len(numbers1)):
-	numbers1[i] = int(numbers1[i]) 
-# The following line is the same as the for-loop
-# numbers1 = list(map(int, numbers))
+  numbers1[i] = int(numbers1[i])
+print("The original list: ", numbers1)
 
-# print ("The original list: ", numbers1)
+numbers2 = []
 
-# ******************************
-# Make your Code
-# ******************************
+for j in range(len(numbers1)):
+  numbers2.insert(j, numbers1.pop())
+
+print("The new list: ", numbers2)
